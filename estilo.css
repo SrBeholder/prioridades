@@ -32,6 +32,10 @@ li{
     margin: 0px;
     display: inline;
 }
+.inputs{
+    height: 35px;
+    width: 200px;
+}
 #play{
     padding: 10px 23px;
     margin: 10px;
