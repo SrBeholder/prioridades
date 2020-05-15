@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom, rgb(4, 14, 14), rgb(28, 42, 53));
+    color: white;
+    font-family: ;
+}
+.rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.cabecalho {
+    top: 0;
+    padding: 40px 100px;
+    font-size: 20spx;
+}
+li{
+    font-size: 20px;
+}
+.caixa{
+    padding: 10px 85px;
+    margin: 10px;
+}
+.caixa *{
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+#play{
+    padding: 10px 83px;
+    margin: 10px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+#play ul li {
+    background-image: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: 2px;
+    cursor: move;
+    zoom: 1;
+    position: relative;
+    background-color: lightgrey;
+    border:1px
+}
