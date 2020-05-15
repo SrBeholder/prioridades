@@ -17,14 +17,14 @@ body {
 }
 .cabecalho {
     top: 0;
-    padding: 40px 100px;
+    padding: 40px;
     font-size: 20spx;
 }
 li{
     font-size: 20px;
 }
 .caixa{
-    padding: 10px 85px;
+    padding: 10px 25px;
     margin: 10px;
 }
 .caixa *{
@@ -33,7 +33,7 @@ li{
     display: inline;
 }
 #play{
-    padding: 10px 83px;
+    padding: 10px 23px;
     margin: 10px;
 }
 ul{
