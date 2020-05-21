@@ -38,11 +38,24 @@
         </div>
         <div id="play" style="padding-top: 0px">
             <ul id="list1">
-                <li class="list1">Item #1</li>
-                <li class="list1">Item #2</li>
-                <li class="list1">Item #3</li>
-                <li class="list1">Item #4</li>
-                <li class="list1">Item #5</li>
+                <li class="list1">Prédio novo (com salas de aula, biblioteca e laboratórios)</li>
+                <li class="list1">Reforma campus (pintura geral  e pastilhamento de algumas áreas)</li>
+                <li class="list1">Equipamentos para laboratórios</li>
+                <li class="list1">Urbanização do campus e estacionamento</li>
+                <li class="list1">Segurança e Acessibilidade</li>
+                <li class="list1">Reforma da Unidade móvel</li>
+                <li class="list1">Segurança patrimonial para Biblioteca</li>
+                <li class="list1">Salas individuais para as coordenações de cursos</li>
+                <li class="list1">Sala de trabalho para os docentes</li>
+                <li class="list1">Finalização do Lab Info I (Mobiliário, Caixa de Som, 2 Switches)</li>
+                <li class="list1">Material p/ disciplina Redes (20 Roteadores domésticos)</li>
+                <li class="list1">Mobiliário p/ Lab Hard e LCF (Bancadas Industriais de eletrônica, 4 armários de aço)</li>
+                <li class="list1">Livros do curso de Informática na Biblioteca</li>
+                <li class="list1">Computadores avançados p/ LCF (1 Servidor, 10 notebooks, 5 estações de trabalho)</li>
+                <li class="list1">Computadores para os setores administrativos</li>
+                <li class="list1">Medidor de vibração ocupacional (VCI e VMB) - Laboratório de TST</li>
+                <li class="list1">Livros para a biblioteca</li>
+                <li class="list1">itemX</li>
             </ul>
         </div>
         <div class="caixa">
@@ -50,7 +63,7 @@
             <input type="submit" class="inputs" value="Confirmar prioridade" onclick="formParaTexto()"></input>
         </div>
         <div class="caixa">
-            <p>IV - Copie e cole o texto gerado para o wpp do César</p>
+            <p>IV - Copie e cole o texto gerado para o wpp do Cesar (+5522981731504)</p>
             <textarea id="textao" rows="4" cols="32" style="display: block;"></textarea>
         </div>
         <br />
@@ -68,7 +81,7 @@
             var textAlt = nome.value
             lista.childNodes.forEach(filho => {
                 if(typeof filho.innerText != 'undefined')
-                textAlt = textAlt + "," + filho.innerText
+                textAlt = textAlt + ";" + filho.innerText
             });             
             //captura textarea e atualiza valor
             var textao = document.getElementById("textao")
