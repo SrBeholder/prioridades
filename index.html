@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Priorização de Demandas - IFFluminense Campus Quissamã</title>
+        <title>REFORMAS (Priorização de Demandas - IFFluminense Campus Quissamã)</title>
         
         <!-- Código do YUI -->
         <script src="https://yui-s.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
@@ -21,59 +21,38 @@
 <body>
     <div class="cabecalho">
         <header class="inner">
-          <h1 id="project_title">Prioridades</h1>
-          <p id="project_tagline">Página criada para avaliar as prioridades do IFFluminense <i>Campus</i> Quissamã</p>         
+          <h1 id="project_title">Priorização de REFORMAS</h1>
+          <p id="project_tagline">Página criada para avaliar as prioridades do IFFluminense <i>Campus</i> Quissamã no quesito: Reformas</p>
+          <br>
+          <p id="explanation">
+            Itens de reforma, que não são obras novas, saem da verba de custeio do <i>campus</i>.
+            Só deve ser viável a execução de apenas uma destas demandas caras (com muito aperto no orçamento).
+            <br>Obs.: Considere sua resposta quanto ao destino do laboratório móvel no formulário juntamente com a prioridade nesta lista
+            (se você marcou "Doação", coloque o item "Reforma do laboratório móvel" em último)
+          </p>
         </header>
     </div>
     <!-- Form -->
     <div class="jumbotron" style="color: rgb(4, 24, 24);padding: 5px;">
         <br />
-        <div class="caixa">
-            <p>I - Digite seu nome:</p>
-            <input id="nome" class="inputs" type="text" placeholder="Digite seu nome"></input>
-        </div>
         <!-- Lista -->
         <div class="caixa" style="padding-bottom: 0px">
-            <p>II - Ordene a lista de acordo com a sua prioridade (do mais importante para o menos importante)</p>
+            <p>I - Ordene os itens de acordo com o seu julgamento sobre a prioridade (do mais importante para o menos importante)</p>
         </div>
         <div id="play" style="padding-top: 0px">
             <ul id="list1">
-                <li class="list1">Prédio novo (com salas de aula, micródromo, biblioteca e laboratórios)</li>
-                <li class="list1">Reforma campus (pintura geral  e pastilhamento de algumas áreas)</li>
-                <li class="list1">Urbanização do campus e estacionamento</li>
-                <li class="list1">Equipamento de segurança patrimonial para Biblioteca</li>
-                <li class="list1">Reforma da Unidade móvel</li>
-                <li class="list1">Finalização do Lab Info I (Mobiliário, Caixa de Som, 2 Switches)</li>
-                <li class="list1">Material p/ disciplina Redes (20 Roteadores domésticos)</li>
-                <li class="list1">Mobiliário p/ Lab Hard e LCF (Bancadas Industriais de eletrônica, 4 armários de aço)</li>
-                <li class="list1">Livros do curso de Informática na Biblioteca</li>
-                <li class="list1">Computadores avançados p/ LCF (1 Servidor, 10 notebooks, 5 estações de trabalho)</li>
-                <li class="list1">Computadores para os setores administrativos</li>
-                <li class="list1">Salas individuais para as coordenações de cursos</li>
-                <li class="list1">Medidor de vibração ocupacional (VCI e VMB) - Laboratório de TST</li>
-                <li class="list1">Salas de trabalho adequadas para os docentes</li>
-                <li class="list1">Livros para a biblioteca</li>
-                <li class="list1">Salas de estudos para alunos</li>
-                <li class="list1">Quadra de vôlei de praia</li>
-                <li class="list1">Micródromo</li>
-                <li class="list1">Reforma do Auditório</li>
-                <li class="list1">Melhorar o alcance de internet wireless</li>
-                <li class="list1">Iluminação do campus</li>
-                <li class="list1">Equipamentos p/ Lab Multidisciplinar (armários, extintor, chuveiro, equip. segurança e EPIs, frigobar</li>
-                <li class="list1">08 Osciloscópios para o Laboratório de Eletrônica</li>
-                <li class="list1">Sala de Estudos/Pesquisas/Orientação</li>
-                <li class="list1">Sala de enfermaria (e seus equipamentos)</li>
-                <li class="list1">Espaços de convivência (com Bancos, Redes (redário), Pufs)</li>
-                <li class="list1">Acervo de livros de inglês/espanhol (Touchstone/Español en Marcha)</li>
-                <li class="list1">Mais Armários para os estudantes guardarem seus livros e pertences</li>
+                <li class="list1">Reforma do auditório</li>
+                <li class="list1">Reforma do campus (pintura e pastilhamento)</li>
+                <li class="list1">Reforma do laboratório móvel</li>
+                <li class="list1">Reforma do piso dos banheiros</li>
             </ul>
         </div>
         <div class="caixa">
-            <p>III - Clique no botão de confirmação:</p>
-            <input type="submit" class="inputs" value="Confirmar prioridade" onclick="formParaTexto()"></input>
+            <p>II - Clique no botão de confirmação:</p>
+            <input type="submit" class="inputs" value="Confirmar Priorização" onclick="formParaTexto()"></input>
         </div>
         <div class="caixa">
-            <p>IV - Copie e cole o texto gerado para o wpp do Cesar (+5522981731504)</p>
+            <p>III - Copie e cole o texto gerado no formulário</p>
             <textarea id="textao" rows="4" cols="32" style="display: block;"></textarea>
         </div>
         <br />
@@ -81,14 +60,19 @@
     <div class="container">
         
     </div>
+    <div class="cabecalho">
+        <footer class="inner">
+          <p id="project_tagline">Original code by <bold>SrBeholder</bold>. Trashed by <bold>luizcanf.</bold></p>
+        </footer>
+    </div>
     <!-- Código do texto -->
     <script type="text/javascript">
         function formParaTexto(){
             //captura nome e lista
-            var nome = document.getElementById("nome")            
+            //var nome = document.getElementById("nome")            
             var lista = document.getElementById("list1")            
             //trata texto
-            var textAlt = nome.value
+            var textAlt = ""
             lista.childNodes.forEach(filho => {
                 if(typeof filho.innerText != 'undefined')
                 textAlt = textAlt + ";" + filho.innerText
